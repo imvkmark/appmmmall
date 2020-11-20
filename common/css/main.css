@@ -1,0 +1,28 @@
+/*通用 */
+view {
+	line-height: 1.8;
+	font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	color: transparent;
+}
+
+/* 兼容苹果X以上的手机样式 */
+.iphone-x {
+/* 	padding-bottom: 68rpx !important; */
+	padding-bottom: constant(safe-area-inset-bottom);  
+	padding-bottom: env(safe-area-inset-bottom);  
+}
+
+.iphone-x-fixed {
+	bottom: 68rpx !important;
+}
+
+
+.uni-input{
+	font-size: 28rpx;
+}

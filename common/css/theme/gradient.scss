@@ -1,0 +1,324 @@
+//组件分销商品列表
+	.ns-gradient-components-diy-fenxiao-goods-list{
+		&.theme-default{
+			background: linear-gradient(to left, $base-color, #FD7E4B); 
+		}
+		// &.theme-green{
+		// 	// color: $base-color-green;
+		// 	background: linear-gradient(to left, $base-color-green, #FD7E4B); 
+		// }
+		// &.theme-blue{
+		// 	// color: $base-color-blue;
+		// 	background: linear-gradient(to left, $base-color-blue, #FD7E4B); 
+		// }
+	}
+	
+	//组件ns-goods-action-button
+	.ns-gradient-components-ns-goods-action-list{
+		&.theme-default{
+			background: linear-gradient(to right, lighten($base-color, 15%), $base-color); 
+		}
+		// &.theme-green{
+		// 	// color: $base-color-green;
+		// 	background: linear-gradient(to right, lighten($base-color-green, 15%), $base-color-green); 
+		// }
+		// &.theme-blue{
+		// 	// color: $base-color-blue;
+		// 	background: linear-gradient(to right, lighten($base-color-blue, 15%), $base-color-blue); 
+		// }
+	}
+	
+	//页面otherpages/fenxiao/apply/apply
+	.ns-gradient-otherpages-fenxiao-apply-apply-bg{
+		&.theme-default{
+			background: linear-gradient(to left, $base-color, lighten($base-color, 20%));
+		}
+		// &.theme-green{
+		// 	background: linear-gradient(to left, $base-color-green, lighten($base-color-green, 20%));
+		// }
+		// &.theme-blue{
+		// 	// color: $base-color-blue;
+		// 	background: linear-gradient(to right, lighten($base-color-blue, 15%), $base-color-blue); 
+		// }
+	}
+	
+	//页面otherpages/fenxiao/level/level
+	.ns-gradient-otherpages-fenxiao-level-level{
+		&.theme-default{
+			background: linear-gradient(to bottom, $base-color, adjust-hue($base-color, 30%));
+		}
+		// &.theme-green{
+		// 	background: linear-gradient(to bottom, $base-color-green, adjust-hue($base-color-green, 30%));
+		// }
+		// &.theme-blue{
+		// 	background: linear-gradient(to bottom, $base-color-blue, adjust-hue($base-color-blue, 30%));
+		// }
+	}
+	
+	//页面otherpages/fenxiao/public/css/index
+	.ns-gradient-otherpages-fenxiao-index-index-header{
+		&.theme-default{
+			background: linear-gradient(180deg, $base-color, #fd814b);
+		}
+		// &.theme-green{
+		// 	background: linear-gradient(180deg, $base-color-green, #fd814b);
+		// }
+		// &.theme-blue{
+		// 	background: linear-gradient(180deg, $base-color-blue, #fd814b);
+		// }
+	}
+	
+	//otherpages/fenxiao/public/css/goods_list
+	.ns-gradient-otherpages-fenxiao-goods-list{
+		&.theme-default{
+			background: linear-gradient(to left,$base-color,#FD7E4B);
+		}
+		// &.theme-green{
+		// 	background: linear-gradient(to left,$base-color-green,#FD7E4B);
+		// }
+		// &.theme-blue{
+		// 	background: linear-gradient(to left,$base-color-blue,#FD7E4B);
+		// }
+	}
+	
+	// otherpages/member/apply_withdrawal/apply_withdrawal
+	.ns-gradient-otherpages-member-widthdrawal-withdrawal{
+		&.theme-default{
+			background: linear-gradient(to left, $base-color, lighten($base-color, 20%));
+		}
+		// &.theme-green{
+		// 	background: linear-gradient(to left, $base-color-green, lighten($base-color-green, 20%));
+		// }
+		// &.theme-blue{
+		// 	background: linear-gradient(to left, $base-color-blue, lighten($base-color-blue, 20%));
+		// }
+	}
+	
+	
+	// otherpages/member/balance/balance
+	.ns-gradient-otherpages-member-balance-balance-wrap{
+		&.theme-default{
+			background: linear-gradient(to bottom, $base-color, adjust-hue($base-color, 40%));
+		}
+		// &.theme-green{
+		// 	background: linear-gradient(to bottom, $base-color-green, adjust-hue($base-color-green, 40%));
+		// }
+		// &.theme-blue{
+		// 	background: linear-gradient(to bottom, $base-color-blue, adjust-hue($base-color-blue, 40%));
+		// }
+	}
+	// otherpages/member/balance/balance
+	.ns-gradient-otherpages-member-balance-balance-rechange{
+		&.theme-default{
+				background: linear-gradient(to left, $base-color, #FD7E4B);
+		}
+		// &.theme-green{
+		// 		background: linear-gradient(to left, $base-color-green, #FD7E4B);
+		// }
+		// &.theme-blue{
+		// 		background: linear-gradient(to left, $base-color-blue, #FD7E4B);
+		// }
+	}
+	
+	// 	otherpages/member/coupon/coupon
+	.ns-gradient-otherpages-member-coupon-coupon{
+		&.theme-default{
+				background: linear-gradient(to left, $base-color, #FD7E4B);
+		}
+		// &.theme-green{
+		// 		background: linear-gradient(to left, $base-color-green, #FD7E4B);
+		// }
+		// &.theme-blue{
+		// 		background: linear-gradient(to left, $base-color-blue, #FD7E4B);
+		// }
+	}
+	
+	//签到
+	.ns-gradient-otherpages-member-signin{
+		// @include multi-row-apostrophe(1);
+		background: linear-gradient(to bottom, $base-color, adjust-hue($base-color, 30%));
+		&.theme-default{
+			background: linear-gradient(to bottom, $base-color, adjust-hue($base-color, 30%)); 
+		}
+		// &.theme-green{
+		// 	// color: $base-color-green;
+		// 	background: linear-gradient(to bottom, $base-color-green, adjust-hue($base-color-green, 30%)); 
+		// }
+		// &.theme-blue{
+		// 	// color: $base-color-blue;
+		// 	background: linear-gradient(to bottom, $base-color-blue, adjust-hue($base-color-blue, 30%)); 
+		// }
+	}
+	
+	// otherpages/recharge/list/list
+	.ns-gradient-otherpages-list-list-top{
+		// @include multi-row-apostrophe(1);
+		background: linear-gradient(to bottom, $base-color, adjust-hue($base-color, 35%));
+		&.theme-default{
+			background: linear-gradient(to bottom, $base-color, adjust-hue($base-color, 35%));
+		}
+		// &.theme-green{
+		// 	background: linear-gradient(to bottom, $base-color-green, adjust-hue($base-color-green, 35%));
+		// }
+		// &.theme-blue{
+		// 	background: linear-gradient(to bottom, $base-color-blue, adjust-hue($base-color-blue, 35%));
+		// }
+	}
+	.ns-gradient-otherpages-list-list-btn{
+		// @include multi-row-apostrophe(1);
+		background: linear-gradient(to left, $base-color, adjust-hue($base-color, 30%));
+		&.theme-default{
+			background: linear-gradient(to left, $base-color, adjust-hue($base-color, 30%));
+		}
+		// &.theme-green{
+		// 	background: linear-gradient(to left, $base-color-green, adjust-hue($base-color-green, 30%));
+		// }
+		// &.theme-blue{
+		// 	background: linear-gradient(to left, $base-color-blue, adjust-hue($base-color-blue, 30%));
+		// }
+	}
+	
+	// otherpages/verification/index/index
+	.ns-gradient-otherpages-verification-index-index-code{
+		// @include multi-row-apostrophe(1);
+		background-image: linear-gradient(to right, mix($base-color, #fff), $base-color);
+		&.theme-default{
+			background-image: linear-gradient(to right, mix($base-color, #fff), $base-color);
+		}
+		// &.theme-green{
+		// 	background-image: linear-gradient(to right, mix($base-color-green, #fff), $base-color-green);
+		// }
+		// &.theme-blue{
+		// 	background-image: linear-gradient(to right, mix($base-color-blue, #fff), $base-color-blue);
+		// }
+	}
+	
+	// pages/login/login/login
+	.ns-gradient-pages-lodin-login-login{
+		// @include multi-row-apostrophe(1);
+		background-image:linear-gradient(to right, mix($base-color, #fff), $base-color);
+		&.theme-default{
+			background-image:linear-gradient(to right, mix($base-color, #fff), $base-color);
+		}
+		// &.theme-green{
+		// 	background-image:linear-gradient(to right, mix($base-color-green, #fff), $base-color-green);
+		// }
+		// &.theme-blue{
+		// 	background-image:linear-gradient(to right, mix($base-color-blue, #fff), $base-color-blue);
+		// }
+	}
+	
+	//pages/member/index/index
+	.ns-gradient-pages-member-index-index{
+		// @include multi-row-apostrophe(1);
+		background: linear-gradient(to left, lighten($base-color, 10%), darken($base-color, 1%)) !important;
+		&.theme-default{
+			background: linear-gradient(to left, lighten($base-color, 10%), darken($base-color, 1%)) !important;
+		}
+		// &.theme-green{
+		// 	background: linear-gradient(to left, lighten($base-color-green, 10%), darken($base-color-green, 1%)) !important;
+		// }
+		// &.theme-blue{
+		// 	background: linear-gradient(to left, lighten($base-color-blue, 10%), darken($base-color-blue, 1%)) !important;
+		// }
+	}
+	
+	// pages/order/public/css/logistics
+	.ns-gradient-pages-order-logistics{
+		// @include multi-row-apostrophe(1);
+		background: linear-gradient(0deg, #e5e5e5, $base-color);
+		&.theme-default{
+			background: linear-gradient(0deg, #e5e5e5, $base-color);
+		}
+		// &.theme-green{
+		// 	background: linear-gradient(0deg, #e5e5e5, $base-color-green);
+		// }
+		// &.theme-blue{
+		// 	background: linear-gradient(0deg, #e5e5e5, $base-color-blue);
+		// }
+	}
+	
+	.ns-gradient-promotionpages-groupbuy-list-list{
+		// @include multi-row-apostrophe(1);
+		background: linear-gradient(to right, lighten($base-color, 15%), $base-color);
+		&.theme-default{
+			background: linear-gradient(to right, lighten($base-color, 15%), $base-color);
+		}
+		// &.theme-green{
+		// 	background: linear-gradient(to right, lighten($base-color-green, 15%), $base-color-green);
+		// }
+		// &.theme-blue{
+		// 	background: linear-gradient(to right, lighten($base-color-blue, 15%), $base-color-blue);
+		// }
+	}
+	
+	// promotionpages/pintuan/list/list
+	.ns-gradient-promotionpages-pintuan-list-list{
+		// @include multi-row-apostrophe(1);
+		background: linear-gradient(to right, lighten($base-color, 15%), $base-color);
+		&.theme-default{
+			background: linear-gradient(to right, lighten($base-color, 15%), $base-color);
+		}
+		// &.theme-green{
+		// 	background: linear-gradient(to right, lighten($base-color-green, 15%), $base-color-green);
+		// }
+		// &.theme-blue{
+		// 	background: linear-gradient(to right, lighten($base-color-blue, 15%), $base-color-blue);
+		// }
+	}
+	
+	// promotionpages/pintuan/list/list
+	.ns-gradient-promotionpages-pintuan-share-share{
+		// @include multi-row-apostrophe(1);
+		background-image: linear-gradient(to right, mix($base-color, #fff), $base-color);
+		&.theme-default{
+			background-image: linear-gradient(to right, mix($base-color, #fff), $base-color);
+		}
+		// &.theme-green{
+		// 	background-image: linear-gradient(to right, mix($base-color-green, #fff), $base-color-green);
+		// }
+		// &.theme-blue{
+		// 	background-image: linear-gradient(to right, mix($base-color-blue, #fff), $base-color-blue);
+		// }
+	}
+	
+	
+	//payment
+	.ns-gradient-promotionpages-topics-payment{
+		// @include multi-row-apostrophe(1);
+		background: linear-gradient(to right, mix($base-color, #fff), $base-color) !important;
+		&.theme-default{
+			background: linear-gradient(to right, mix($base-color, #fff), $base-color) !important; 
+		}
+		// &.theme-green{
+		// 	// color: $base-color-green;
+		// 	background: linear-gradient(to right, mix($base-color-green, #fff), $base-color-green) !important; 
+		// }
+		// &.theme-blue{
+		// 	// color: $base-color-blue;
+		// 	background: linear-gradient(to right, mix($base-color-blue, #fff), $base-color-blue) !important; 
+		// }
+	}
+	
+	.ns-gradient-diy-goods-list{
+		&[data-theme = 'theme-default']{
+			border-color: rgba($base-color,0.2) !important; 
+		}
+		// &[data-theme = 'theme-green']{
+		// 	border-color: rgba($base-color-green,0.2) !important; 
+		// }
+		// &[data-theme = 'theme-blue']{
+		// 	border-color: rgba($base-color-blue,0.2) !important; 
+		// }
+	}
+	.ns-gradient-pages-member-index{
+		&[data-theme = 'theme-default']{
+			background: rgba($base-color,0.6) !important; 
+		}
+		// &[data-theme = 'theme-green']{
+		// 	background: rgba($base-color-green,0.6) !important; 
+		// }
+		// &[data-theme = 'theme-blue']{
+		// 	background: rgba($base-color-blue,0.6) !important; 
+		// }
+	}

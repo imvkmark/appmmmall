@@ -1,0 +1,165 @@
+// 小
+.ns-font-size-sm {
+	font-size: $ns-font-size-sm;
+}
+// 标准
+.ns-font-size-base {
+	font-size: $ns-font-size-base;
+}
+// 大
+.ns-font-size-lg {
+	font-size: $ns-font-size-lg;
+}
+
+//文字颜色
+.ns-text-color-black {
+	color: $ns-text-color-black !important;
+}
+.ns-text-color-gray {
+	color: $ns-text-color-gray !important;
+}
+
+.ns-border-color-gray {
+	border-color: $ns-border-color-gray !important;
+}
+
+.ns-bg-color-gray {
+	background-color: $ns-bg-color-gray !important;
+}
+
+page {
+	background-color: #f7f7f7;
+}
+
+view {
+	font-size: $ns-font-size-base;
+	color: $ns-text-color-black;
+}
+
+//内边距
+.ns-padding {
+	padding: $ns-padding !important;
+	&-top {
+		padding-top: $ns-padding !important;
+	}
+	&-right {
+		padding-right: $ns-padding !important;
+	}
+	&-bottom {
+		padding-bottom: $ns-padding !important;
+	}
+	&-left {
+		padding-left: $ns-padding !important;
+	}
+}
+
+//外边距
+.ns-margin {
+	margin: $ns-margin !important;
+	&-top {
+		margin-top: $ns-margin !important;
+	}
+	&-right {
+		margin-right: $ns-margin !important;
+	}
+	&-bottom {
+		margin-bottom: $ns-margin !important;
+	}
+	&-left {
+		margin-left: $ns-margin !important;
+	}
+}
+
+//圆角
+.ns-border-radius {
+	border-radius: $ns-border-radius !important;
+}
+/* #ifndef APP-PLUS-NVUE */
+uni-button:after {
+	border: none !important;
+}
+button::after {
+	border: none !important;
+}
+/* #endif */
+.uni-tag--inverted {
+	border-color: $ns-border-color-gray !important;
+	color: $ns-text-color-black !important;
+}
+
+// 按钮禁用背景色
+.btn-disabled-color {
+	background: $btn-disabled-color;
+}
+
+// 右浮动
+.pull-right {
+	float: right !important;
+}
+
+// 左浮动
+.pull-left {
+	float: left !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+// 商品详情，数量加减
+.sku-layer .body-item .number-wrap .number {
+	button,
+	input {
+		border-color: rgba(229, 229, 229, 0.5) !important;
+		background-color: rgba(229, 229, 229, 0.4) !important;
+	}
+}
+
+.ns-btn-default-all.gray {
+	background: $ns-bg-color-gray;
+	color: $ns-text-color-gray;
+}
+.ns-btn-default-all.free.gray {
+	background: #ffffff;
+	color: $ns-text-color-gray;
+	border: 1rpx solid $ns-border-color-gray;
+}
+.ns-btn-default-mine.gray {
+	background: $ns-bg-color-gray;
+	color: $ns-text-color-gray;
+}
+.ns-btn-default-mine.free.gray {
+	background: #ffffff;
+	color: $ns-text-color-gray;
+	border: 1rpx solid $ns-border-color-gray;
+}
+
+// 状态栏占位
+// 示例 有子元素即可悬浮在顶部
+// <view class='app-status-bar-white' > <view > </view > </view > 
+[class^='app-status-bar'] {
+	height: var(--status-bar-height);
+	width: 100%;
+	& > view {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: var(--status-bar-height);
+		z-index: 3;
+	}
+	&.app-status-bar-default {
+		background-color: inherit;
+		& > view {
+			background-color: inherit;
+		}
+	}
+	&.app-status-bar-white {
+		background-color: #fff;
+		& > view {
+			background-color: #fff;
+		}
+	}
+}

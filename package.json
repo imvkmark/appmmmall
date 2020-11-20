@@ -1,0 +1,27 @@
+{
+  "name": "appmmmall",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "jsencrypt": "^3.0.0-rc.1",
+    "jweixin-module": "^1.4.1",
+    "pako": "^1.0.11",
+    "postcss-loader": "^4.0.1",
+    "uview-ui": "^1.6.9",
+    "vue-moment": "^4.1.0"
+  },
+  "devDependencies": {
+    "@dcloudio/uni-ui": "^1.2.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@codeup.aliyun.com:5ef78bc8c1c8059ce376968f/waibao/appmmmall.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,501 @@
+// [data-theme]{
+// .container{
+// 	width: 100vw;
+// 	height: 100vh;
+// 	box-sizing: border-box;
+
+// 	&.safearea{
+// 		padding-bottom: 68rpx;
+// 	}
+// }
+
+// @mixin flex-row-center {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+// @mixin wrap {
+// 	margin: 20rpx 0;
+// 	padding: $ns-padding;
+// 	border-radius: $ns-border-radius;
+// 	background: #fff;
+// 	position: relative;
+// 	width: calc(100% - 40rpx);
+// 	box-sizing: border-box;
+// }
+
+// .swiper-box {
+// 	width: 100%;
+// 	height: 100vh;
+
+// 	.swiper-item{
+// 		width: 100%;
+// 		height: 100%;
+// 	}
+// }
+
+// .goods-wrap {
+// 	@include wrap;
+
+// 	.head {
+// 		display: flex;
+// 		align-items: center;
+// 		line-height: 1;
+
+// 		.name{
+// 			font-size: 24rpx;
+// 			margin-left: 4rpx;
+// 		}
+// 	}
+
+// 	.goods {
+// 		margin-bottom: 20rpx;
+// 		display: flex;
+// 		position: relative;
+
+// 		&:first-of-type{
+// 			.goods-img{
+// 				padding: 20rpx 0 0 0;
+// 			}
+
+// 			.goods-info{
+// 				padding: 20rpx 0 0 0;
+// 			}
+// 		}
+
+// 		&:last-of-type{
+// 			margin-bottom: 0;
+// 		}
+
+// 		.goods-img {
+// 			width: 120rpx;
+// 			height: 120rpx;
+// 			margin-right: 20rpx;
+
+// 			image {
+// 				width: 100%;
+// 				height: 100%;
+// 			}
+// 		}
+
+// 		.goods-info {
+// 			flex: 1;
+// 			position: relative;
+// 			max-width: calc(100% - 140rpx);
+
+// 			.goods-name {
+// 				display: -webkit-box;
+// 				-webkit-box-orient: vertical;
+// 				-webkit-line-clamp: 2;
+// 				overflow: hidden;
+// 				line-height: 1.5;
+// 				font-size: 26rpx;
+// 			}
+
+// 			.goods-sub-section {
+// 				width: 100%;
+// 				line-height: 1.3;
+// 				display: flex;
+
+// 				.goods-price {
+// 					font-weight: 700;
+// 					font-size: 15px;
+// 				}
+
+// 				.unit {
+// 					font-weight: normal;
+// 					font-size: 24rpx;
+// 					margin-right: 2rpx;
+// 				}
+
+// 				view{
+// 					flex: 1;
+// 					line-height: 1.3;
+// 					&:last-of-type{
+// 						text-align: right;
+
+// 						.iconfont{
+// 							line-height: 1;
+// 							font-size: 26rpx;
+// 						}
+// 					}
+// 				}
+// 			}
+
+// 			.goods-operation{
+// 				text-align: right;
+// 				padding-top: 20rpx;
+
+// 				.operation-btn{
+// 					line-height: 1;
+// 					padding: 14rpx 20rpx;
+// 					color: #333;
+// 					display: inline-block;
+// 					border-radius: 28rpx;
+// 					background: #fff;
+// 					border: 0.5px solid #999;
+// 					font-size: 24rpx;
+// 					margin-left: 10rpx;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// .express-company-wrap {
+// 	@include wrap;
+// 	display: flex;
+
+// 	.company-logo{
+// 		width: 120rpx;
+// 		height: 120rpx;
+// 		margin-right: 20rpx;
+
+// 		image{
+// 			width: 100%;
+// 			height: 100%;
+// 		}
+// 	}
+
+// 	.info{
+// 		flex: 1;
+
+// 		.company{
+// 			line-height: 1.5;
+// 			margin-top: 16rpx;
+// 		}
+
+// 		.no{
+// 			line-height: 1.5;
+// 		}
+
+// 		.iconfuzhi{
+// 			font-size: 28rpx;
+// 			line-height: 1;
+// 			margin-left: 6rpx;
+// 		}
+
+// 	}
+// }
+
+// .track-wrap {
+// 	@include wrap;
+
+// 	.track-item{
+// 		position: relative;
+// 		flex-wrap: wrap;
+// 		overflow: visible;
+// 		display: flex;
+
+// 		&:after{
+// 			content: "";
+// 			position: absolute;
+// 			z-index: 1;
+// 			pointer-events: none;
+// 			background-color: #e5e5e5;
+// 			width: 1px;
+// 			top: 0;
+// 			bottom: 0;
+// 			left: 0;
+// 			top: 74rpx;
+// 			left: 20rpx;
+// 			bottom: -40rpx;
+// 		}
+
+// 		.dot{
+// 			margin: 48rpx 30rpx 0 10rpx;
+// 			width: 20rpx;
+// 			height: 20rpx;
+// 			border-radius: 10rpx;
+// 			background-color: #ccc;
+// 		}
+
+// 		.msg{
+// 			padding: 20rpx 0;
+// 			flex: 1;
+
+// 			.text{
+// 				line-height: 1.5;
+// 				color: #333;
+// 				font-size: 28rpx;
+// 			}
+
+// 			.time{
+// 				color: #999;
+// 				font-size: 24rpx;
+// 				line-height: 1.3;
+// 			}
+// 		}
+
+// 		&:last-of-type:after{
+// 			content: unset;
+// 		}
+// 	}
+// }
+// }
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&.safearea {
+		padding-bottom: 0;
+		padding-bottom: constant(safe-area-inset-bottom);
+		padding-bottom: env(safe-area-inset-bottom);
+	}
+}
+
+@mixin flex-row-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin wrap {
+	padding: $ns-padding;
+	border-radius: $ns-border-radius;
+	background: #fff;
+	position: relative;
+	width: calc(100% - 60rpx);
+	box-sizing: border-box;
+}
+
+.swiper-box {
+	width: 100%;
+	height: 100vh;
+
+	.swiper-item {
+		width: 100%;
+		height: 100%;
+	}
+}
+.order-nav {
+	width: 100vw;
+	height: 60rpx;
+	flex-direction: row;
+	/* #ifndef APP-PLUS */
+	white-space: nowrap;
+	/* #endif */
+	background: #fff;
+	display: flex;
+	position: fixed;
+	left: 0;
+	z-index: 998;
+
+	.uni-tab-item {
+		display: inline-block;
+		padding-left: 24rpx;
+		padding-right: 24rpx;
+		height: 60rpx;
+		line-height: 60rpx;
+	}
+
+	.uni-tab-item-title {
+		color: #555;
+		font-size: $ns-font-size-lg;
+		display: block;
+		height: 64rpx;
+		padding: 0 10rpx;
+		flex-wrap: nowrap;
+		/* #ifndef APP-PLUS */
+		white-space: nowrap;
+		/* #endif */
+		text-align: center;
+	}
+
+	.uni-tab-item-title-active {
+		display: block;
+		height: 64rpx;
+		border-bottom: 1px solid #ffffff;
+		padding: 0 10rpx;
+	}
+
+	::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+		color: transparent;
+	}
+}
+
+.goods-wrap {
+	@include wrap;
+	margin-top: 80rpx;
+
+	.goods {
+		display: flex;
+		position: relative;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		.goods-img {
+			width: 120rpx;
+			height: 120rpx;
+			margin-right: 20rpx;
+
+			image {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.goods-info {
+			flex: 1;
+			position: relative;
+			max-width: calc(100% - 140rpx);
+
+			.goods-name {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+				overflow: hidden;
+				line-height: 1.5;
+				font-size: $ns-font-size-base;
+			}
+
+			.goods-sub-section {
+				width: 100%;
+				line-height: 1.3;
+				display: flex;
+
+				.goods-price {
+					font-weight: 700;
+					font-size: 20rpx;
+				}
+
+				.unit {
+					font-weight: normal;
+					font-size: $ns-font-size-base;
+					margin-right: 2rpx;
+				}
+
+				view {
+					flex: 1;
+					line-height: 1.3;
+					&:last-of-type {
+						text-align: right;
+
+						.iconfont {
+							line-height: 1;
+							font-size: $ns-font-size-base;
+						}
+					}
+				}
+			}
+
+			.goods-operation {
+				text-align: right;
+
+				.operation-btn {
+					line-height: 1;
+					padding: 14rpx 20rpx;
+					color: #333;
+					display: inline-block;
+					border-radius: 28rpx;
+					background: #fff;
+					border: 0.5px solid #999;
+					font-size: $ns-font-size-base;
+					margin-left: 10rpx;
+				}
+			}
+		}
+	}
+}
+
+.express-company-wrap {
+	@include wrap;
+	display: flex;
+	margin-top: 20rpx;
+
+	.company-logo {
+		width: 120rpx;
+		height: 120rpx;
+		margin-right: 20rpx;
+
+		image {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.info {
+		flex: 1;
+
+		.company {
+			line-height: 1.5;
+			margin-top: 16rpx;
+		}
+
+		.no {
+			line-height: 1.5;
+		}
+
+		.iconfuzhi {
+			font-size: $ns-font-size-lg;
+			line-height: 1;
+			margin-left: 6rpx;
+		}
+	}
+}
+
+.track-wrap {
+	@include wrap;
+	margin-top: 20rpx;
+
+	.track-item {
+		position: relative;
+		flex-wrap: wrap;
+		overflow: visible;
+		display: flex;
+
+		&:after {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			pointer-events: none;
+			background-color: #e5e5e5;
+			width: 1px;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			top: 74rpx;
+			left: 20rpx;
+			bottom: -40rpx;
+		}
+
+		.dot {
+			margin: 48rpx 30rpx 0 10rpx;
+			width: 20rpx;
+			height: 20rpx;
+			border-radius: 10rpx;
+			background-color: #ccc;
+		}
+
+		.msg {
+			padding: 20rpx 0;
+			flex: 1;
+
+			.text {
+				line-height: 1.5;
+				color: #333;
+				font-size: $ns-font-size-lg;
+			}
+
+			.time {
+				color: #999;
+				font-size: $ns-font-size-base;
+				line-height: 1.3;
+			}
+		}
+
+		&:last-of-type:after {
+			content: unset;
+		}
+	}
+}

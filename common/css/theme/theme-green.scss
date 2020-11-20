@@ -1,0 +1,276 @@
+//主色调，红色：#FF0036，绿色 #4CAF50，蓝色：#03A9F4，黄色：#FF9800，粉色：#FF547B，棕色：#C3A769，浅绿色：#65C4AA，黑色：#333333，紫色：#B323B4，淡粉色：#FF8B8B
+$base-color-green: #09DB98;
+//主色调 rgba  可用opacify函数改变alpha值  实例：opacify($base-color-rgba, 0.8);
+$base-color-rgba-green: rgba(255, 0, 54, 0.1);
+
+.theme-green{ 
+	//文字颜色
+	.ns-text-color {
+		color: $base-color-green !important;
+	}
+	
+	//边框
+	.ns-border-color {
+		border-color: $base-color-green !important;
+		&-top{
+			border-top-color: $base-color-green !important;
+		}
+		&-bottom{
+			border-bottom-color: $base-color-green !important;
+		}
+		&-right{
+			border-right-color: $base-color-green !important;
+		}
+		&-left{
+			border-left-color: $base-color-green !important;
+		}
+	}
+	
+	//背景色
+	.ns-bg-color {
+		background-color: $base-color-green !important;
+	}
+	//按钮
+	button {
+		margin: 0 60rpx;
+		font-size: $ns-font-size-base;
+		border-radius: 20px;
+		line-height: 2.7;
+		&[type='primary'] {
+			background-color: $base-color-green !important;
+			&[plain] {
+				background-color: transparent !important;
+				color: $base-color-green !important;
+				border-color: $base-color-green !important;
+			}
+			&[disabled] {
+				// color: rgba(0, 0, 0, 0.2) !important;
+				// border-color: rgba(0, 0, 0, 0.2) !important;
+				background: $ns-bg-color-gray !important;
+				color: $ns-text-color-gray;
+			}
+			&.btn-disabled {
+				background: $ns-bg-color-gray !important;
+				color: $ns-text-color-gray !important;
+			}
+		}
+		&.btn-disabled {
+			background: $ns-bg-color-gray !important;
+			color: $ns-text-color-gray !important;
+		}
+		&[type='warn'] {
+			background: #ffffff;
+			border: 1rpx solid $base-color-green !important;
+			color: $base-color-green;
+			&[plain] {
+				background-color: transparent !important;
+				color: $base-color-green !important;
+				border-color: $base-color-green !important;
+			}
+			&[disabled] {
+				border: 1rpx solid $ns-border-color-gray !important;
+				color: $ns-text-color-gray;
+			}
+			&.btn-disabled {
+				border: 1rpx solid $ns-border-color-gray !important;
+				color: $ns-text-color-gray;
+			}
+		}
+		&[size='mini'] {
+			margin: 0 !important;
+		}
+	}
+	// 复选框
+	uni-checkbox .uni-checkbox-input.uni-checkbox-input-checked {
+		color: $base-color-green !important;
+	}
+	
+	// 开关
+	uni-switch .uni-switch-input.uni-switch-input-checked {
+		background-color: $base-color-green !important;
+		border-color: $base-color-green !important;
+	}
+	
+	// 单选
+	uni-radio .uni-radio-input-checked {
+		background-color: $base-color-green !important;
+		border-color: $base-color-green !important;
+	}
+	
+	// 滑块
+	uni-slider .uni-slider-track {
+		background-color: $base-color-green !important;
+	}
+	
+	//tag
+	.uni-tag--primary {
+		color: #fff !important;
+		background-color: $base-color-green !important;
+		border-color: $base-color-green !important;
+	}
+	
+	.uni-tag--primary.uni-tag--inverted {
+		color: $base-color-green !important;
+		background-color: #fff !important;
+		border-color: $base-color-green !important;
+	}
+	//商品详情，优惠券弹出层，项
+	.goods-coupon-popup-layer .coupon-body .item {
+		background-color: lighten($base-color-green, 45%) !important;
+		view {
+			color: lighten($base-color-green, 10%) !important;
+		}
+	}
+	
+	// 商品详情，sku选中
+	.sku-layer .body-item .sku-list-wrap {
+		.items {
+			background-color: #f5f5f5 !important;
+			&.selected {
+				background-color: lighten($base-color-green, 45%) !important;
+				color: $base-color-green !important;
+				border-color: $base-color-green !important;
+			}
+			&.disabled {
+				color: #898989 !important;
+				cursor: not-allowed !important;
+				pointer-events: none !important;
+				opacity: 0.5 !important;
+				box-shadow: none !important;
+				filter: grayscale(100%);
+			}
+		}
+	}
+	
+	// 商品详情，限时折扣
+	.goods-detail .goods-discount {
+		background: linear-gradient(to bottom, #fef391, #fbe253);
+		.price-info {
+			background: linear-gradient(to right, $base-color-green, lighten($base-color-green, 10%)) !important;
+		}
+	}
+	
+	// 秒杀商品详情
+	.goods-detail .seckill-wrap {
+		background: linear-gradient(to right, $base-color-green, lighten($base-color-green, 20%)) !important;
+	}
+	
+	.goods-detail .goods-module-wrap .original-price .seckill-save-price {
+		background: lighten($base-color-green, 40%) !important;
+		color: $base-color-green !important;
+	}
+	
+	// 拼团商品详情
+	.goods-detail .goods-pintuan {
+		background: linear-gradient(to bottom, #fef391, #fbe253);
+		.price-info {
+			background: linear-gradient(to right, $base-color-green, lighten($base-color-green, 10%)) !important;
+		}
+	}
+	
+	// 专题商品详情
+	.goods-detail .topic-wrap {
+		background: linear-gradient(to right, $base-color-green, lighten($base-color-green, 30%)) !important;
+	}
+	
+	.goods-detail .goods-module-wrap .original-price .topic-save-price {
+		background: lighten($base-color-green, 40%) !important;
+		color: $base-color-green !important;
+	}
+	
+	// 团购商品详情
+	.goods-detail .goods-groupbuy {
+		background: linear-gradient(to bottom, #fef391, #fbe253);
+		.price-info {
+			background: linear-gradient(to right, $base-color-green, lighten($base-color-green, 10%)) !important;
+		}
+	}
+	
+	//团购列表颜色渐变
+	.gradual-change {
+		background: linear-gradient(45deg, rgba($base-color-green, 1), rgba($base-color-green, 0.6)) !important;
+	}
+	
+	//测试统一按钮
+	.ns-btn-default-all {
+		width: 100%;
+		height: 70rpx;
+		background: $base-color-green;
+		border-radius: 70rpx;
+		text-align: center;
+		line-height: 70rpx;
+		color: #ffffff;
+		font-size: $ns-font-size-base;
+	}
+	.ns-btn-default-all.gray {
+		background: $ns-bg-color-gray;
+		color: $ns-text-color-gray;
+	}
+	.ns-btn-default-all.free {
+		width: 100%;
+		background: #ffffff;
+		color: $base-color-green;
+		border: 1rpx solid $base-color-green;
+		font-size: $ns-font-size-base;
+		box-sizing: border-box;
+	}
+	.ns-btn-default-all.free.gray {
+		background: #ffffff;
+		color: $ns-text-color-gray;
+		border: 1rpx solid $ns-border-color-gray;
+	}
+	.ns-btn-default-mine {
+		display: inline-block;
+		height: 60rpx;
+		border-radius: 60rpx;
+		line-height: 60rpx;
+		padding: 0 30rpx;
+		box-sizing: border-box;
+		color: #ffffff;
+		background: $base-color-green;
+	}
+	.ns-btn-default-mine.gray {
+		background: $ns-bg-color-gray;
+		color: $ns-text-color-gray;
+	} 
+	.ns-btn-default-mine.free {
+		background: #ffffff;
+		color: $base-color-green;
+		border: 1rpx solid $base-color-green;
+		font-size: $ns-font-size-base;
+		box-sizing: border-box;
+	}
+	.ns-btn-default-mine.free.gray {
+		background: #ffffff;
+		color: $ns-text-color-gray;
+		border: 1rpx solid $ns-border-color-gray;
+	}
+	
+	//订单列表按钮样式
+	.order-box-btn {
+		display: inline-block;
+		line-height: 56rpx;
+		padding: 0 30rpx;
+		font-size: $ns-font-size-base;
+		color: $ns-text-color-black;
+		border: 1rpx solid #999;
+		box-sizing: border-box;
+		border-radius: 60rpx;
+		margin-left: $ns-margin;
+		&.order-pay {
+			background: $base-color-green;
+			color: #fff;
+			border-color: #fff;
+		}
+	}
+	
+	.ns-text-before::after,.ns-text-before::before{
+			color: $base-color-green !important;
+		}
+	.ns-bg-before::after{
+		background: $base-color-green !important;
+	}
+	.ns-bg-before::before{
+		background: $base-color-green !important;
+	}
+}
